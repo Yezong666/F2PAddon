@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Low Health Remover",
+  "version": "1.0",
+  "description": "Removes Low Health Monsters",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://demonicscans.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://demonicscans.org/active_wave.php*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    
+  }
+}
